@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5A576C;
+  padding: 2px;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-left {
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-connexion,
+.btn-inscription {
+  background-color: transparent;
+  /* border: 2px solid #fff; /* Bordure solide blanche */
+  border-radius: 20px; /* Bordure arrondie */
+  margin-right: 10px;
+  cursor: pointer; 
+  border: 2px solid #EFBD0B; /* Bordure solide bleue */
+  border-radius: 5px; /* Coins légèrement arrondis */
+  color: #fff;
+  padding: 8px 16px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  width: 150px;
+  height: auto;
+  transform: scale(0.5)
+}
+
+/* css loanding page  */
+
+.loading-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 50px;
+}
+
+.text-block {
+  flex: 1;
+  border-right: 2px solid #ccc; /* Bordure élégante */
+  padding-right: 50px;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 46px;
+  margin: 0;
+}
+
+.image-block {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.image-container {
+  border: 2px solid #ccc; /* Bordure élégante */
+  border-radius: 50%; /* Forme circulaire */
+  padding: 20px;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%; /* Pour s'adapter à la forme circulaire */
+};
+
+/* Footer  */
+
+/* Footer.css */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  width: 100px;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-line {
+  border: none;
+  border-top: 1px solid #fff;
+  margin-top: 20px;
 }

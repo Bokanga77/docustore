@@ -1,0 +1,40 @@
+/* Footer.css */
+.footer {
+    background-color: #5A576C;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .social-icons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer-line {
+    border: none;
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+  }
+  
