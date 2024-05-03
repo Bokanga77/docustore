@@ -2,7 +2,7 @@
 .footer {
     background-color: #5A576C;
     color: #fff;
-    padding: 20px;
+    padding: 50px;
   }
   
   .footer-content {
@@ -20,6 +20,11 @@
     width: 100px;
     height: auto;
   }
+
+  p {
+    line-height: 0.1; /* Réduire l'interligne à 1 fois la hauteur de la police */
+  }
+  
   
   .social-icons {
     list-style-type: none;

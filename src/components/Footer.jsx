@@ -1,6 +1,12 @@
 import React from 'react';
 import './Footer.css'
 import logo from'../images/logo.png';
+import Facebook from '../images/facebook.png';
+import Instagram from '../images/Instagram.png';
+import X from '../images/X.png';
+import Linkedin from '../images/LinkedIn.png';
+import Youtube from '../images/Youtube.png';
+
 function Footer() {
   return (
     <footer className="footer">
@@ -14,10 +20,11 @@ function Footer() {
           <p>info@docustore.com</p>
           <div className="footer-right">
           <ul className="social-icons">
-            <li><a href="#b"><i className="fab fa-facebook">fb</i></a></li>
-            <li><a href="#ba"><i className="fab fa-twitter">bbb</i></a></li>
-            <li><a href="#cc"><i className="fab fa-instagram">bbbb</i></a></li>
-            <li><a href="#vb"><i className="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><img src={Facebook} alt=""  /></a></li>
+            <li><a href="#ba"><img src={Instagram} alt=""  /></a></li>
+            <li><a href="#cc"><img src={X} alt="" srcset="" /></a></li>
+            <li><a href="#vb"><img src={Linkedin} alt=""  /></a></li>
+            <li><a href="#vb"><img src={Youtube} alt=""  /></a></li>
           </ul>
         </div>
         </div>

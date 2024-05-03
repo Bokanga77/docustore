@@ -6,7 +6,7 @@
   align-items: center;
   background-color: #5A576C;
   padding: 2px;
-  color: #fff;
+  color: #000;
 }
 
 .navbar-left {
@@ -20,7 +20,7 @@
   border-radius: 20px; /* Bordure arrondie */
   margin-right: 10px;
   cursor: pointer; 
-  border: 2px solid #EFBD0B; /* Bordure solide bleue */
+  border: 2px solid #fff; /* Bordure solide bleue */
   border-radius: 5px; /* Coins légèrement arrondis */
   color: #fff;
   padding: 8px 16px;
@@ -28,10 +28,19 @@
   cursor: pointer;
 }
 
+.btn {
+  color: inherit;
+  text-decoration: none;
+}
+
 .logo {
-  width: 150px;
-  height: auto;
-  transform: scale(0.5)
+  
+  transform: scale(0.5);
+  max-width: 500px; /* Définissez la taille maximale que vous souhaitez pour le logo */
+  max-height: 50px; /* Définissez également une hauteur maximale pour le logo, si nécessaire */
+
+  
+  
 }
 
 /* css loanding page  */
@@ -42,12 +51,30 @@
   align-items: center;
   height: 100vh;
   padding: 0 50px;
+  background-color:#4A4088;
+  color: #fff;
 }
+
+.loading-page {
+  position: relative; /* Assure que les éléments positionnés absolument sont positionnés par rapport à ce conteneur */
+}
+
+.loading-page::before {
+  content: ''; /* Contenu généré */
+  position: absolute; /* Position absolue par rapport au conteneur parent */
+  top: 15%; /* Alignement au coin supérieur */
+  left: 0; /* Alignement au coin gauche */
+  width: 20%; /* Largeur de la ligne */
+  height: 2px; /* Épaisseur de la ligne */
+  background-color: #ccc; /* Couleur de la ligne */
+  transform: rotate(-45deg); /* Rotation de la ligne pour la rendre diagonale */
+}
+
 
 .text-block {
   flex: 1;
-  border-right: 2px solid #ccc; /* Bordure élégante */
-  padding-right: 50px;
+  border-bottom: 10px solid #ccc; /* Bordure élégante */
+  padding-bottom: 25px;
 }
 
 .text {
@@ -64,11 +91,7 @@
   padding-left: 50px;
 }
 
-.image-container {
-  border: 2px solid #ccc; /* Bordure élégante */
-  border-radius: 50%; /* Forme circulaire */
-  padding: 20px;
-}
+
 
 .image {
   max-width: 100%;
@@ -79,8 +102,8 @@
 /* Footer  */
 
 /* Footer.css */
-.footer {
-  background-color: #333;
+/* .footer {
+  background-color: ;
   color: #fff;
   padding: 20px;
 }
@@ -94,6 +117,7 @@
 .footer-left {
   display: flex;
   flex-direction: column;
+  line-height: 0.2;
 }
 
 .logo {
@@ -116,4 +140,4 @@
   border: none;
   border-top: 1px solid #fff;
   margin-top: 20px;
-}
+} */

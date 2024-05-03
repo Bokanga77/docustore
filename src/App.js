@@ -1,8 +1,10 @@
 
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import Home from './components/Home';
-import Login from './components/Login';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import Home from '../src/Pages/Home.jsx';
+// import Login from './components/Login';
+import SignupForm from './components/SignupForm';
+// import Formular from './components/Formular';
 
 function App() {
   return (
@@ -16,9 +18,11 @@ function App() {
             
           </Switch>
         </Router>
+        
      */}
-     <Login/>
-
+     {/* <Home/> */}
+     {/* <Formular/> */}
+     <SignupForm/>
     </div>
   );
 }
