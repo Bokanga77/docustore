@@ -26,10 +26,11 @@
   padding: 8px 16px;
   margin-right: 10px;
   cursor: pointer;
+
 }
 
 .btn {
-  color: inherit;
+  color: #FF;
   text-decoration: none;
 }
 
@@ -99,45 +100,3 @@
   border-radius: 50%; /* Pour s'adapter à la forme circulaire */
 };
 
-/* Footer  */
-
-/* Footer.css */
-/* .footer {
-  background-color: ;
-  color: #fff;
-  padding: 20px;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  line-height: 0.2;
-}
-
-.logo {
-  width: 100px;
-  height: auto;
-}
-
-.social-icons {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.social-icons li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.footer-line {
-  border: none;
-  border-top: 1px solid #fff;
-  margin-top: 20px;
-} */
