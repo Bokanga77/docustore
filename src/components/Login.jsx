@@ -99,7 +99,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Ajoutez ici la logique pour traiter la soumission du formulaire
+    //la logique pour traiter la soumission du formulaire
     console.log('Email:', email);
     console.log('Password:', password);
   };

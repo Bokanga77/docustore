@@ -8,6 +8,7 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import Home from './Pages/Home';
 import Login from './components/Login';
 import SignupForm from './components/SignupForm';
+import NotFound from './Pages/NotFound';
 
 
 
@@ -25,6 +26,11 @@ const route =createBrowserRouter([
   {
     path: "/SignupForm",
     element: <SignupForm />
+  },
+  {/* Route par défaut pour gérer les erreurs 404 */},
+  {
+    path: "*",
+    element: <NotFound />
   }
 ]
 
@@ -33,8 +39,9 @@ const route =createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  
-    <App/>
+
+    <RouterProvider router={route} />
+
   </React.StrictMode>
 );
 

@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../images/logo.png'
 import Login from './Login';
 import SignupForm from './SignupForm';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
@@ -18,8 +18,8 @@ function NavBar() {
 
       <div className="navbar-right">
         
-        <button className="btn-connexion"><NavLink to='./Login.jsx' className="btn">Connexion</NavLink></button>
-        <button className="btn-inscription"><NavLink to='./SignupForm.jsx' className="btn">Inscription</NavLink></button>
+        <button className="btn-connexion"><Link to='./Login.jsx' className="btn">Connexion</Link></button>
+        <button className="btn-inscription"><Link to='./SignupForm.jsx' className="btn">Inscription</Link></button>
       </div>
 
 
